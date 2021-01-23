@@ -12,8 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-- [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-- [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon2)
+- [Visual Studio 2017 (can be Community Version)](https://visualstudio.microsoft.com/vs/older-downloads/)
+- [.NET Core 2.1 for VS 2017](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.520-windows-x64-installer) [Refer here for the specfics versions](https://dotnet.microsoft.com/download/visual-studio-sdks)
 - [Selenium WebDriver Java Client](http://docs.seleniumhq.org/download/)
 - [Chrome Driver Server](http://chromedriver.storage.googleapis.com/index.html?path=2.20/)
 

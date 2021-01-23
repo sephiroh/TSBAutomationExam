@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 - [Visual Studio 2017 (can be Community Version)](https://visualstudio.microsoft.com/vs/older-downloads/)
-- [.NET Core 2.1 for VS 2017](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.520-windows-x64-installer) - *[Refer here for the specfics versions]*(https://dotnet.microsoft.com/download/visual-studio-sdks)
+- [.NET Core 2.1 for VS 2017](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.520-windows-x64-installer) - *[Refer here for the specfics versions](https://dotnet.microsoft.com/download/visual-studio-sdks)*
 - [Selenium WebDriver Java Client](http://docs.seleniumhq.org/download/)
 - [Chrome Driver Server](http://chromedriver.storage.googleapis.com/index.html?path=2.20/)
 

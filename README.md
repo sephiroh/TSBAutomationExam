@@ -14,7 +14,7 @@ What things you need to install first:
 
 - [Visual Studio 2017 (can be Community Version)](https://visualstudio.microsoft.com/vs/older-downloads/)
 - [.NET Core 2.1 for VS 2017](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.520-windows-x64-installer) - *[Refer here for the specfics versions](https://dotnet.microsoft.com/download/visual-studio-sdks)*
-- [Google Chrome v88 and up](https://www.google.com/chrome/)
+- [Google Chrome v88 and up](https://www.google.com/chrome/) NOTE: This Automation Suite is configured to run only on Chrome Browser in the meantime.
 - [Git](https://git-scm.com/downloads)
 
 

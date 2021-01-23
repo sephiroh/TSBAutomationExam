@@ -12,41 +12,9 @@ namespace TSBAutomationExam.API
 {
     public class TradeMeAPI
     {
-        //private string strURL = "https://api.trademe.co.nz/v1";
         private RestClient client;
         private RestRequest request;
         private IRestResponse response;
-
-        //public void Test()
-        //{
-
-        //    var client = new RestClient("https://api.trademe.co.nz/v1/Categories/UsedCars.json");
-        //    var request = new RestRequest(Method.GET);
-
-
-        //    IRestResponse<CategoriesDO> response = client.Execute<CategoriesDO>(request);
-
-        //    var abc = response.Data.Subcategories.Find(x => x.Name == "Kia");
-
-
-
-        //    Console.Write(abc);
-        //    Console.Write("");
-
-        //}
-
-        public void Test2(string authType)
-        {
-            var authDetails = Utilities.GetAuthDetails(authType);
-            var client = new RestClient("https://api.tmsandbox.co.nz/v1/Search/Motors/Used.json");
-            //client.Authenticator = OAuth1Authenticator.ForRequestToken("0F95FFAA01054119805E0C7024D1D129", "319AA8456342535B7F88F14B5937C0B2");
-            client.Authenticator = OAuth1Authenticator.ForRequestToken(authDetails.ConsumerKey, authDetails.ConsumerSecret);
-            var request = new RestRequest(Method.GET);
-
-            var response = client.Execute(request);
-
-            Console.Write(response.Content);
-        }
 
 
         public void CreateClientConnection(string endpoint)
@@ -117,7 +85,7 @@ namespace TSBAutomationExam.API
                 Assert.AreEqual(car.History, $"{responseCar.Owners} owners, Imported", "Test Failed: History is not displayed as expected.");
                 //Assert.AreEqual(car.RegistrationExpires, responseCar.RegistrationExpires, "Test Failed: Registration Expires is not displayed as expected.");
                 //Assert.AreEqual(car.WoFExpires, responseCar.WoFExpires, "Test Failed: WoF Expires is not displayed as expected.");
-                //Registration Expires and WoFExpires have both value of - /Date(0)/
+                //Registration Expires and WoFExpires have both value of - /Date(0)/, thus omitting this assertion for now
                 Assert.AreEqual(car.ModelDetail, responseCar.ModelDetail, "Test Failed: Model Details is not displayed as expected.");
             }
             else

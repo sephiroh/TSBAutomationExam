@@ -17,7 +17,7 @@ namespace TSBAutomationExam.StepDefinitions
         public WebBrowser browser = WebBrowser.Chrome;
         public static BasePage currentPage;
 
-        [BeforeScenario]
+        [BeforeScenario(Order = 2)]
         public void InitializeBrowser()
         {
             driver = WebDriverFactory.CreateWebDriver(browser);
@@ -31,7 +31,7 @@ namespace TSBAutomationExam.StepDefinitions
             currentPage.Close();
         }
 
-        [AfterTestRun]
+        [AfterTestRun(Order = 2)]
         public static void Cleanup()
         {
             currentPage.Quit();

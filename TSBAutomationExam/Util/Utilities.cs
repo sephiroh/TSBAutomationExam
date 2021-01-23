@@ -14,6 +14,7 @@ namespace TSBAutomationExam.Util
     {
         public static string BaseDirectory => Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\"));
         public static string TestDataFolder => Path.Combine(BaseDirectory, "Util\\");
+        public static string TestResultFolder => Path.Combine(BaseDirectory, $"TestResults\\");
 
         public static CarDO GetCarDetails(string carName)
         {

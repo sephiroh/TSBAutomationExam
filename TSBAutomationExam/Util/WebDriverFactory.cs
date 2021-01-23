@@ -27,18 +27,18 @@ namespace TSBAutomationExam.Util
                 case WebBrowser.Firefox:
                     FirefoxOptions firefoxOption = new FirefoxOptions();
                     firefoxOption.AcceptInsecureCertificates = true;
-                    return new FirefoxDriver(firefoxOption);
+                    return new FirefoxDriver(Environment.CurrentDirectory, firefoxOption);
                 case WebBrowser.IE:
                     InternetExplorerOptions ieOption = new InternetExplorerOptions();
                     ieOption.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
                     ieOption.EnsureCleanSession = true;
                     ieOption.RequireWindowFocus = true;
-                    return new InternetExplorerDriver(ieOption);
+                    return new InternetExplorerDriver(Environment.CurrentDirectory, ieOption);
                 //If Edge Version 18, run in CMD Admin first - DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
                 case WebBrowser.Edge:
                     EdgeOptions options = new EdgeOptions();
                     options.UseInPrivateBrowsing = true;
-                    return new EdgeDriver(options);
+                    return new EdgeDriver(Environment.CurrentDirectory, options);
                 case WebBrowser.HeadlessChrome:
                     ChromeOptions headlessOptions = new ChromeOptions();
                     headlessOptions.AddUserProfilePreference("download.directory_upgrade", true);
@@ -53,7 +53,7 @@ namespace TSBAutomationExam.Util
                     headlessOptions.AddArgument("--proxy-server='direct://'");
                     headlessOptions.AddArgument("--proxy-bypass-list=*");
                     headlessOptions.AddArgument("--ignore-certificate-errors");
-                    return new ChromeDriver(headlessOptions);  
+                    return new ChromeDriver(Environment.CurrentDirectory, headlessOptions);  
                 case WebBrowser.Chrome:
                 default:
 
@@ -66,7 +66,6 @@ namespace TSBAutomationExam.Util
                     chromeOptions.AddArgument("disable-infobars");
                     chromeOptions.AddArgument("--disable-extensions");
                     chromeOptions.AddArgument("--ignore-certificate-errors");
-                    //return new ChromeDriver(@"C:\Users\rvibora\Downloads\chromedriver_win32", chromeOptions);
                     return new ChromeDriver(Environment.CurrentDirectory, chromeOptions);
                     //return new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), chromeOptions.ToCapabilities(), TimeSpan.FromSeconds(300));
 

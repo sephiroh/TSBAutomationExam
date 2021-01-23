@@ -17,7 +17,6 @@ namespace TSBAutomationExam.StepDefinitions
         [Given(@"I create an (.*) client connection")]
         public void GivenICreateAClientConnection(string endpoint)
         {
-            tradeMeAPI.Test2("OAuth");
             tradeMeAPI.CreateClientConnection(endpoint);
         }
 

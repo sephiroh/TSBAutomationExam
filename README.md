@@ -2,13 +2,31 @@
 
 This is the Automation Test Suite based from the Test Automation task as part of the application for the Automation Analyst role.
 
+## Test Scenarios:
 
-## Getting Started
+Using the TradeMe Sandbox web site, write automation code which does the following:
+
+1. Check there is at least one listing in the TradeMe UsedCars category.
+2. Check that the make ‘Kia’ exists.
+3. Query any existing Used Car listing and confirm that the following details are shown for that car:
+- Number plate
+- Kilometres
+- Body
+- Seats
+- Fuel type
+- Engine
+- Transmission
+- History
+- Registration expires
+- WoF expires
+- Model detail
+
+# Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
 
 
-### Prerequisites
+## Prerequisites
 
 What things you need to install first:
 

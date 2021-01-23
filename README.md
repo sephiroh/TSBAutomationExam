@@ -10,21 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install first:
 
 - [Visual Studio 2017 (can be Community Version)](https://visualstudio.microsoft.com/vs/older-downloads/)
 - [.NET Core 2.1 for VS 2017](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.520-windows-x64-installer) - *[Refer here for the specfics versions](https://dotnet.microsoft.com/download/visual-studio-sdks)*
-- [Selenium WebDriver Java Client](http://docs.seleniumhq.org/download/)
-- [Chrome Driver Server](http://chromedriver.storage.googleapis.com/index.html?path=2.20/)
+- [Google Chrome v88 and up](https://www.google.com/chrome/)
+- [Git](https://git-scm.com/downloads)
 
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-- [Installing Java](http://toolsqa.com/selenium-webdriver/download-and-install-java/)
-- [Set up Eclipse IDE](http://toolsqa.com/selenium-webdriver/download-and-start-eclipse/)
-- [Configure Eclipse with Selenium WebDriver](http://toolsqa.com/selenium-webdriver/configure-eclipse-with-selenium-webdriver/)
 
 ## Running the tests
 
@@ -32,17 +24,24 @@ Upon setting up of the necessary requirements, we can now proceed on running the
 
 ### Step-by-step guide
 
-1. From Eclipse IDE, import the Automation Suite (SampleTask folder name) from Github.
-2. Verify if all the file are imported.
-3. Setup desired Test Data by navigating to SampleTask2/src/dataEngine/DataEngine.xlsx
-4. Run the Execution Engine (SampleTask2/src/executionEngine/DriverScript.java)
+#### Run via Visual Studio IDE
+1. Clone the repo from Github to you local machine
+2. Launch Visual Studio 2017
+3. Open the Project/Solution from the cloned repository
+4. Build the Project
+5. Navigate thru the Test Explorer Window
+6. Click "Run All" button
+7. Wait until the automation run is completed.
+8. Verify results through the output, or thru the /TestResults folder with FileName ExtentReport.html
+
+#### Run via Visual Studio IDE
+1. Clone the repo from Github to you local machine
+2. Open a CLI (Command Prompt)
+3. Navigate to the cloned project directory
+4. Run the Command "dotnet test"
 5. Wait until the automation run is completed.
-6. Verify results through Sampletask2/logfile.log and/or DataEngine.xlsx
+6. Verify results through the output, or thru the /TestResults folder with FileName ExtentReport.html
 
 ## Authors
 
-* **Robert Cecil Vibora** - *Initial work* - [AutomationTask](https://github.com/sephiroh/AutomationTask)
-
-## References
-
-- [Toolsqa](http://toolsqa.com/selenium-webdriver)
+* **Robert Cecil Vibora** - [TSBAutomationExam](https://github.com/sephiroh/TSBAutomationExam)
